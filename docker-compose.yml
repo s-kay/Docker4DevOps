@@ -1,0 +1,11 @@
+version: '3.9' #docker-compose file version
+
+services:
+
+      simple-web-service:
+       image: devopsdockeruh/simple-web-service
+       container_name: simple-web-service
+       volumes:
+          - ./text.log:/usr/src/app/text.log
+     # ports:
+      #    - "8080:8080" #map the container's port to the host
